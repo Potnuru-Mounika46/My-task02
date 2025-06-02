@@ -1,0 +1,102 @@
+:root {
+  --bg: white;
+  --text: #222;
+  --card: #f0f0f0;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #eee;
+  --card: #1e1e1e;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: var(--card);
+  padding: 30px;
+  border-radius: 20px;
+  width: 400px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#darkModeToggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.converter input, .converter select, .converter button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.converter button {
+  background-color: #00c853;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.converter button:hover {
+  background-color: #00b248;
+}
+
+.dropdowns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dropdown img {
+  width: 30px;
+  height: 20px;
+  border: 1px solid #ccc;
+}
+
+.history {
+  margin-top: 30px;
+}
+
+.history h2 {
+  margin-bottom: 10px;
+}
+
+#history-list {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+#result {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
